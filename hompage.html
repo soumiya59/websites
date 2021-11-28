@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hompage</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+    <section class="container" >
+        <div>
+           <h1 id="demo"></h1>
+           <h3>Happy <span id="demoo"></span> !</h3> 
+        </div><br>
+        <div>
+            <h2>WORDS OF WISDOM OF THE DAY:</h2>
+            <h3 id="space" style="font-style: italic;">To find yourself, think for yourself </h3>
+        </div>
+        <div>
+            <h2>EDUCATE YOUR SELF:</h2>
+            <h3 id="space"><a href="https://www.thetinywisdom.com/post/how-to-gain-confidence">How to gain confidence</a></h3>
+        </div>
+        <div>
+            <h2>MIND BLOWING BOOK OF THE DAY:</h2>
+            <h3 id="space"><a href="https://issuu.com/virahfcyd/docs/_book-be-your-own-bartender-a-surefire-guide-to-fi">Be your own bartender</a></h3>
+        </div>
+        <div>
+            <h2>USEFUL STUFF OF THE DAY:</h2>
+            <h3 id="space"><a href="https://www.youtube.com/playlist?list=PLui6Eyny-UzzJ4NSTesh4xRWg4ZWNz5s4">Do yoga</a></h3>
+        </div>
+        <div>
+            <h2>WEBSITE OF THE DAY:</h2>
+            <h3 id="space"><a href="https://luckyresumemaker.com">Make a resume in minutes</a></h3>
+        </div>
+        <div>
+            <h2>AWESOME VIDEO OF THE DAY:</h2>
+            <h3 id="space"><a href="https://www.youtube.com/watch?v=qkufPL1CE9w">Gingers can't feel the pain properly</a></h3>
+        </div>
+    </section>
+    <footer>Website made and designed by Somaya, 2021</footer>
+    <footer>Have a good day idiot!</footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toDateString();
+        const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        document.getElementById("demoo").innerHTML = days[d.getDay()];
+    </script>
+</body>
+</html>
